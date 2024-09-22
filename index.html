@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <!--
  The Emularity: An Example C64 Loader
  For use with The Emularity, downloadable at http://www.emularity.com/
@@ -27,10 +29,33 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>example dos game</title>
+    <title>Hunt The Wumpus C64</title>
+    <style>
+      body { font-family: sans-serif; }
+    </style>
   </head>
   <body>
-    <canvas id="canvas" style="width: 50%; height: 50%; display: block; margin: 0 auto;"/>
+
+<h1>Hunt The Wumpus for the Commodore 64</h1>
+
+<div><canvas id="canvas" style="width: 50%; height: 50%; display: block; margin: 0 auto;" /></div>
+
+<h2>Controls</h2>
+
+Use the arrow keys to move, and 'z' to shoot an arrow or select menu items.<p>
+
+<h2>Instructions</h2>
+
+You are hunting a Wumpus in its cave! You have one magic arrow which can turn corners in tunnels, but not pass through a room. If you miss, the Wumpus will find you!<p>
+
+Move around the cave to get clues. When you think you're next to a tunnel leading to the Wumpus, press 'z', then the arrow key to the tunnel.<p>
+
+You know you're close when you see blood in the room (the red dots). Rooms two spaces around the Wumpus contain blood. This means if you're in a room without blood, you can pass through two rooms with blood before encountering the Wumpus.<p>
+
+Look out for the slime pit! Rooms next to it are coloured green.<p>
+
+The caves also contain bats! The second time you encounter a bat it will carry you to antoerh part of the cave!<p>
+
     <script type="text/javascript" src="es6-promise.js"></script>
     <script type="text/javascript" src="browserfs.min.js"></script>
     <script type="text/javascript" src="loader.js"></script>
